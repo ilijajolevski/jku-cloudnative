@@ -4,7 +4,6 @@ k3d cluster create --config ./k3d/k3d-local-dev-cluster.yaml
 #create namespace for the argocd installation
 kubectl create namespace argocd
 # install argocd
-kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 
 # the argo-cd intial admin password can be read with the following command:
